@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ListaSintaxeBasica">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/java-mars2/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="ListaSintaxeBasica.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Exercicio20DUVIDA">
+        <java classname="com.magrinelli.marcelo.Exercicio20DUVIDA" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio8">
+        <java classname="com.magrinelli.marcelo.Exercicio8" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio17">
+        <java classname="com.magrinelli.marcelo.Exercicio17" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio7">
+        <java classname="com.magrinelli.marcelo.Exercicio7" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercico10">
+        <java classname="com.magrinelli.marcelo.Exercico10" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio9">
+        <java classname="com.magrinelli.marcelo.Exercicio9" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio11">
+        <java classname="com.magrinelli.marcelo.Exercicio11" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio18">
+        <java classname="com.magrinelli.marcelo.Exercicio18" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio12">
+        <java classname="com.magrinelli.marcelo.Exercicio12" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio37">
+        <java classname="com.magrinelli.marcelo.Exercicio37" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio5">
+        <java classname="com.magrinelli.marcelo.Exercicio5" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio36">
+        <java classname="com.magrinelli.marcelo.Exercicio36" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio6">
+        <java classname="com.magrinelli.marcelo.Exercicio6" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio01">
+        <java classname="com.magrinelli.marcelo.Exercicio01" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio40">
+        <java classname="com.magrinelli.marcelo.Exercicio40" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio27">
+        <java classname="com.magrinelli.marcelo.Exercicio27" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio25">
+        <java classname="com.magrinelli.marcelo.Exercicio25" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio34">
+        <java classname="com.magrinelli.marcelo.Exercicio34" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio19">
+        <java classname="com.magrinelli.marcelo.Exercicio19" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio02">
+        <java classname="com.magrinelli.marcelo.Exercicio2" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio20">
+        <java classname="com.magrinelli.marcelo.Exercicio20" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio28">
+        <java classname="com.magrinelli.marcelo.Exercicio28" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio3">
+        <java classname="com.magrinelli.marcelo.Exercicio3" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio13">
+        <java classname="com.magrinelli.marcelo.Exercicio13" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio29">
+        <java classname="com.magrinelli.marcelo.Exercicio29" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio35">
+        <java classname="com.magrinelli.marcelo.Exercicio35" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercico15">
+        <java classname="com.magrinelli.marcelo.Exercico15" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio26">
+        <java classname="com.magrinelli.marcelo.Exercicio26" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio30">
+        <java classname="com.magrinelli.marcelo.Exercicio30" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio33">
+        <java classname="com.magrinelli.marcelo.Exercicio33" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio24">
+        <java classname="com.magrinelli.marcelo.Exercicio24" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio16">
+        <java classname="com.magrinelli.marcelo.Exercicio16" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio23">
+        <java classname="com.magrinelli.marcelo.Exercicio23" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio32">
+        <java classname="com.magrinelli.marcelo.Exercicio32" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio22">
+        <java classname="com.magrinelli.marcelo.Exercicio22" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio39">
+        <java classname="com.magrinelli.marcelo.Exercicio39" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio35DUVIDA">
+        <java classname="com.magrinelli.marcelo.Exercicio35DUVIDA" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio4">
+        <java classname="com.magrinelli.marcelo.Exercicio4" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+    <target name="Exercicio31">
+        <java classname="com.magrinelli.marcelo.Exercicio31" failonerror="true" fork="yes">
+            <classpath refid="ListaSintaxeBasica.classpath"/>
+        </java>
+    </target>
+</project>
