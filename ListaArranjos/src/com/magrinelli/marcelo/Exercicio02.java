@@ -13,38 +13,41 @@ public class Exercicio02 {
 		return matriz;
 	}
 
-	public static int determinante(int[][] matriz){
-	
-		if(matriz.length == 1){
-			
-			return matriz[0][0];
-			
-		} else if(matriz.length == 2){
-			
-			int det = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);
-			
-			return det;
-			
-		} else {
-			
-			int detA = 1;
-			int detB = 1;
-			int[][] submatriz = subMatriz(matriz);
-			
-			for (int i = 0; i < matriz.length; i++) {
-				detA = detA * matriz[i][i];
-			}
-			
-			return detB - detA;
+	public static double determinante(double[][] matriz){	
+		if(matriz.length == 1){			
+			return matriz[0][0];			
+		} else if(matriz.length == 2){			
+			double det = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);			
+			return det;			
+		} else {			
+			double soma = 0;
+		    for(int i = 0; i < matriz.length; i++){
+		    double[][] nm = new double [matriz.length-1][matriz.length-1];
+		        for(int j = 0; j < matriz.length; j++){
+		            if(j != i){
+		                for(int k = 1; k < matriz.length; k++){
+		                	int indice = -1;
+		                	if(j < i){
+		                		indice = j;
+		                	}		                		
+		                	else if(j > i){
+		                		indice = j-1;
+		                	}		                
+		                	nm[indice][k-1] = matriz[j][k];
+		                }
+		            }
+		        }
+		        soma = (i%2 == 0)? soma + matriz[i][0] * determinante(nm) : soma - matriz[i][0] * determinante(nm);		        	
+		    }
+		    return soma;
 		}
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] matriz = {	{1,2,3,4},		//4x4
-							{5,3,2,1},
-							{9,0,1,2},
-							{3,4,0,6}};
+		double[][] matriz = {	{5, 0, 1},		//3x3
+								{-2, 3, 4},
+								{0, 2, -1}};
 		
 		System.out.println(determinante(matriz));
 	}
