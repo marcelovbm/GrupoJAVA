@@ -12,6 +12,7 @@ public class Exercicio05 {
 		raio = scanner.nextFloat();
 		
 		System.out.println("O valor de seu perimetro é " + (float)(2*Math.PI*raio) + " e sua area é " + (float)(Math.PI*Math.pow(raio, 2)));
+		scanner.close();
 	}
 
 }

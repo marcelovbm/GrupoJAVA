@@ -15,6 +15,6 @@ public class Exercicio12 {
 			soma += pontoFlutuante[i];
 		}
 		System.out.print("A soma de todos os salario é " + soma);
+		scanner.close();
 	}
-
 }

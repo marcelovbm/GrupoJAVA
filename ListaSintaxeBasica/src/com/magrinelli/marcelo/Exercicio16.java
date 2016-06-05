@@ -16,6 +16,7 @@ public class Exercicio16 {
 		} else {
 			System.out.println("Po!! Voce nao digitou nenhum operador valido");
 		}
+		scanner.close();
 	}
 
 }

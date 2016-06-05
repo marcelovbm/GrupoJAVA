@@ -27,6 +27,7 @@ public class Exercicio17 {
 		default:
 			System.out.println("Po!! Voce nao digitou nenhum operador valido");
 			break;
-		}	
+		}
+		scanner.close();
 	}
 }

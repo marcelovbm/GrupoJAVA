@@ -13,7 +13,7 @@ public class Exercicio04 {
 		ponto2 = scanner.nextFloat();
 		
 		System.out.println((Math.pow(ponto1, 120))/(Math.sqrt(ponto2)));
-		
+		scanner.close();
 	}
 
 }

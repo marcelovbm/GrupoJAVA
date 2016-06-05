@@ -23,6 +23,7 @@ public class Exercicio40 {
 		} else{
 			System.out.println("O numero " + numero + " nao e um numero perfeito.");
 		}
+		scanner.close();
 	}
 
 }

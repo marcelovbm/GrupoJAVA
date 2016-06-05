@@ -35,6 +35,7 @@ public class Exercicio13DUVIDA {
 			
 			baskara(a, b, c);
 		}
+		scanner.close();
 	}
 
 }

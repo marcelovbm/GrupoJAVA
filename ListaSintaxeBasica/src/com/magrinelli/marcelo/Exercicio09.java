@@ -25,6 +25,7 @@ public class Exercicio09 {
 		numeroInt = scanner.nextInt();
 		
 		somaResultante(numeroInt);
+		scanner.close();
 	}
 
 }

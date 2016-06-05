@@ -21,5 +21,6 @@ public class Exercicio34 {
 				break;
 			}
 		}
+		scanner.close();
 	}
 }

@@ -29,5 +29,6 @@ public class Exercicio33 {
 		}
 		System.out.println("Media " + media(array));
 		System.out.println("Soma " + soma(array));
+		scanner.close();
 	}
 }

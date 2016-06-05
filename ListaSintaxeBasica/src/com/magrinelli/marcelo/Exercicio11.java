@@ -1,7 +1,6 @@
 package com.magrinelli.marcelo;
 
 import java.util.*;
-import java.lang.*;
 
 public class Exercicio11 {
 
@@ -20,5 +19,6 @@ public class Exercicio11 {
 			}
 		}
 		System.out.print(quantidadDeA);
+		scanner.close();
 	}
 }

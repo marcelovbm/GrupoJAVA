@@ -19,6 +19,7 @@ public class Exercicio08 {
 		} else {
 			System.out.println("Voce foi reprovado");
 		}
+		scanner.close();
 	}
 
 }

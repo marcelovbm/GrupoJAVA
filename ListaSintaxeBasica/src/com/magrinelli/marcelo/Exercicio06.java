@@ -36,5 +36,6 @@ public class Exercicio06 {
 		} else {
 			System.out.println("O segundo numero não pode ter o valor '0'");
 		}
+		scanner.close();
 	}
 }

@@ -21,6 +21,8 @@ public class Exercicio02 {
 		for (String i : array) {
 			System.out.print(i);
 		}
+		
+		scanner.close();
 	}
 
 }

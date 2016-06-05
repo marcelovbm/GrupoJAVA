@@ -23,5 +23,6 @@ public class Exercicio39 {
 		} else{
 			System.out.println("O numero " + numero + " nao e primo.");
 		}
+		scanner.close();
 	}
 }

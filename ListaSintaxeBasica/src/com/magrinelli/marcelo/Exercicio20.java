@@ -7,7 +7,6 @@ public class Exercicio20 {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		String nome;
-		char espaco = ' ';
 		System.out.print("Digite o seu nome completo: ");
 		nome = scanner.nextLine();
 		
@@ -19,6 +18,7 @@ public class Exercicio20 {
 			if(nome.charAt(i) == ' '){
 				System.out.print(" " + Character.toUpperCase(nome.charAt(i + 1)));
 			}			
-		}		
+		}	
+		scanner.close();
 	}
 }
