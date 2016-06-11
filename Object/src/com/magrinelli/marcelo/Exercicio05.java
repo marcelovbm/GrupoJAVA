@@ -1,26 +1,35 @@
 package com.magrinelli.marcelo;
 
-public class Exercicio05 {
+import static org.junit.Assert.*;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Correntista correntista = new Correntista(123, "Marcelo");
-		Correntista correntista2 = new Correntista(1234, "Miller");
-		Conta conta = new Conta(correntista, 123.23);
-		Conta conta2 = new Conta(correntista2);
-		
-		System.out.println(conta.getCorrentista().getNome());
-		System.out.println(conta.retirar(124));
-		System.out.println(conta.getSaldo() + "\n");
-		
-		System.out.println(conta2.getCorrentista().getNome());
-		System.out.println(conta2.getSaldo());
-		conta2.depositar(100);
-		System.out.println(conta2.getSaldo() + "\n");
-		
-		conta.transferir(conta2, 100);
-		System.out.println(conta.getCorrentista().getNome() + "->\t" + conta2.getCorrentista().getNome());
-		System.out.println("\t" + conta2.getSaldo() + "\n");
+import org.junit.Test;
+
+public class Exercicio05 {
+	Correntista correntista1 = new Correntista(931234263, "Marcelo");
+	Correntista correntista2 = new Correntista(123123123, "Miller");
+	Conta conta1 = new Conta(correntista1);
+	Conta conta2 = new Conta(correntista2);
+	
+	@Test
+	public void testConstructor() {
+		assertEquals(correntista1, correntista2);
+		assertEquals(conta1, conta1);
+	}
+	
+	
+	@Test
+	public void testSaldo(){
+		assertEquals(conta1.getCorrentista(), conta2.getCorrentista());
+	}
+	
+	@Test
+	public void testNotNull(){
+		assertNotNull(conta1);
+	}
+	
+	@Test
+	public void testNull(){
+		assertNull(conta2);
 	}
 
 }
